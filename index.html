@@ -9,37 +9,47 @@
 	<body>
 		<div class="main">
 			<!-- home start -->
-			<section class="home">
-				<header>
-					<ul class="home__header">
-						<li><a href="#">Company</a></li>
-						<li><a href="#">Who we are</a></li>
-						<li><a href="#">Get in touch</a></li>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Our Clientele</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</header>
-
-				<p>
-					Your business and <span>home can be</span> effortlessly
-					<span>luxurious.</span>
-				</p>
-
-				<div>
-					<a href="#">
-						<button>Learn More</button>
-					</a>
-					<p>It's a state of the art we are committed to at Swissmarkk</p>
+			<section class="intro">
+				<div class="intro_container">
+					<nav>
+						<ul class="intro__nav">
+							<li><a href="#">Company</a></li>
+							<li><a href="#">Who we are</a></li>
+							<li><a href="#">Get in touch</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Our Clientele</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</nav>
+					<div class="home__message">
+						<p>
+							Your business and <span>home can be</span> effortlessly
+							<span>luxurious.</span>
+						</p>
+					</div>
+					<div class="learn">
+						<div class="learn__more">
+							<a href="#">
+								<button>
+									Learn More
+								</button>
+							</a>
+						</div>
+						<div class="learn__phrase">
+							<p>It's a state of the art we are committed to at Swissmarkk</p>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- home end -->
 			<!-- mission start -->
 			<section class="mission">
-				<img src="./Assets/Who we are.jpg" alt="" />
-
+				<!-- <div class="mission__container"> -->
+				<div class="mission__img">
+					<img src="./Assets/Who we are.jpg" alt="" />
+				</div>
 				<div class="mission__statement">
-					<div>
+					<div class="statement">
 						<h1>Who we are?</h1>
 						<p>
 							Our Mission is to Bring a State of Opulence to every Business in
@@ -68,11 +78,12 @@
 							Signature Scent design, natural Essential Oils and advanced
 							Fragrance Diffusion Systems.
 						</p>
-						<p class="mission--link">
+						<p class="mission__link">
 							<a href="#">Read more &rarr;</a>
 						</p>
 					</div>
 				</div>
+				<!-- </div> -->
 			</section>
 			<!-- mission end -->
 			<!-- services start -->
@@ -133,9 +144,12 @@
 						6b Bendel Close, Off Bishop Aboyade Cole, Victoria Island, Lagos,
 						Nigeria
 					</p>
-					<p><a href="#">+2348188209365</a></p>
+					<p><a href="tel:+2348188209365">+2348188209365</a></p>
 					<p>8:00 – 6:00pm, Mon – Sat</p>
-					<p><a href="#">info@swissmarkk.com</a><span>&rarr;</span></p>
+					<p>
+						<a href="mailto:info@swissmarkk.com">info@swissmarkk.com</a
+						><span>&rarr;</span>
+					</p>
 				</div>
 				<div class="contact__form">
 					<form action="">
@@ -280,17 +294,25 @@
 			<footer>
 				<div class="footer">
 					<div class="social">
-						<img src="./Assets/logo-3 2.svg" alt="" class="sm--icon" />
-						<p>
-							We are all about bringing a state of opulence to every business in
-							Africa.
-						</p>
+						<div class="social__img">
+							<img src="./Assets/logo-3 2.svg" alt="" class="sm--icon" />
+						</div>
+						<div class="social__statement">
+							<p>
+								We are all about bringing a state of opulence to every business
+								in Africa.
+							</p>
+						</div>
 						<div class="social__tags">
 							<a href="">
-								<img src="./Assets/facebook.svg" alt="facebook" />
+								<img
+									src="./Assets/facebook-2.svg"
+									alt="facebook"
+									class="facebook"
+								/>
 							</a>
 							<a href="#">
-								<img src="./Assets/twitter.svg" alt="twitter" />
+								<img src="./Assets/twitter-2.svg" alt="twitter" />
 							</a>
 							<a href="#">
 								<img src="./Assets/instagram.svg" alt="instagram" />
@@ -318,17 +340,25 @@
 								placeholder="Email Address"
 							/>
 						</form>
-						<p>
-							6b Bendel Close, Off Bishop Aboyade Cole, Victoria Island, Lagos,
-							Nigeria
+						<div class="footer__contact">
+							<!-- address tag -->
+							<p>
+								6b Bendel Close, Off Bishop Aboyade Cole, Victoria Island,
+								Lagos, Nigeria
+							</p>
+							<p>8:00 – 6:00pm, Mon – Sat</p>
+							<p class="link">
+								<a href="tel:+234-1 342 8350">+234-1 342 8350</a>
+							</p>
+							<p class="social--link">
+								<a href="mailto:info@swissmarkk.com"
+									>info@swissmarkk.com &rarr;</a
+								>
+							</p>
+						</div>
+						<p class="footer__copyright">
+							&copy;2020 SwissMarkk. All Rights Reserved
 						</p>
-						<p>8:00 – 6:00pm, Mon – Sat</p>
-						<p>+234-1 342 8350</p>
-						<p class="social--link">
-							<a href="#">info@swissmarkk.com &rarr;</a>
-						</p>
-
-						<p>&copy;2020 SwissMarkk. All Rights Reserved</p>
 					</div>
 				</div>
 			</footer>
