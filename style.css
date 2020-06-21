@@ -1,6 +1,7 @@
 :root {
 	box-sizing: border-box;
 	font-size: 16px;
+	scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -413,6 +414,7 @@ body {
 .shop > h2 {
 	padding-bottom: 0rem;
 	line-height: 65px;
+	font-weight: bold;
 }
 .shop > p {
 	width: 20%;
