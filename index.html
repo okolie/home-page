@@ -79,13 +79,17 @@
 							Fragrance Diffusion Systems.
 						</p>
 						<p class="mission__link">
-							<a href="#">Read more &rarr;</a>
+							<span class="mission__modal" aria-label="read more"
+								>Read more &rarr;</span
+							>
 						</p>
 					</div>
 				</div>
 				<!-- </div> -->
 			</section>
+
 			<!-- mission end -->
+
 			<!-- services start -->
 			<section class="service">
 				<div class="service__statement">
@@ -364,5 +368,53 @@
 			</footer>
 			<!-- footer end -->
 		</div>
+		<!-- modal -->
+		<div class="modal">
+			<span class="close"><img src="./Assets/close.svg" alt="close" /></span>
+			<div class="content modal__content">
+				<h2>Who we are?</h2>
+				<p>
+					Our Mission is to Bring a State of Opulence to every Business in
+					Africa.
+				</p>
+				<p>
+					Business, we think should evoke splendour and espouse that perfect
+					ambiance where every corner smells, shines and look like the main
+					area. This is what we call creating a wholesome environment. A state
+					of opulence where you combine artistic excellence and technical
+					mastery. It’s luxury at its highest level of perfection.
+				</p>
+				<p>
+					Like wholesome relationships, it’s a delicate balance and sublime
+					match between sensitivity and practicality, emotions and deep insight,
+					science and art. This, we have done for over a decade to develop
+					innovative and cutting edge hygiene and ambiance solutions that will
+					position your brand to be ten times ahead of competition.
+				</p>
+				<p>
+					Deeply embedded in our Company’s DNA is intricate craftsmanship,
+					pensive art and distilled science of hygiene solutions development.
+					Swissmarkk has partnered with industry leaders to provide an extensive
+					range of premium cleaning products, custom Signature Scent design,
+					natural Essential Oils and advanced Fragrance Diffusion Systems.
+				</p>
+			</div>
+		</div>
+		<script>
+			var span = document.querySelector(".close");
+			var modal = document.querySelector(".modal");
+			var readMore = document.querySelector(".mission__modal");
+
+			readMore.addEventListener("click", function (event) {
+				modal.style.display = "block";
+			});
+
+			span.addEventListener("click", function toggle(event) {
+				modal.style.display = "none";
+			});
+			modal.addEventListener("click", function () {
+				modal.style.display = "none";
+			});
+		</script>
 	</body>
 </html>
