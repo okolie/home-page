@@ -39,7 +39,7 @@ nav {
 .close--container {
 	position: absolute;
 	z-index: 2;
-	right: 50px;
+	right: 20px;
 	top: 20px;
 }
 .close--container img {
