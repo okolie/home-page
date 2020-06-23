@@ -10,17 +10,30 @@
 		<div class="main">
 			<!-- home start -->
 			<section class="intro" id="#company">
-				<div class="intro_container">
+				<div class="intro__container">
+					<header>
+						<div class="home__logo__container">
+							<img src="./Assets/company-logo.svg" alt="" />
+						</div>
+						<div class="home__menu__button">
+							<img src="./Assets/menu-button.svg" alt="" />
+						</div>
+					</header>
 					<nav>
 						<ul class="intro__nav">
+							<div class="close--container">
+								<img src="./Assets/close.svg" alt="" />
+							</div>
 							<li><a href="#company">Company</a></li>
-							<li><a href="#who">Who we are</a></li>
-							<li><a href="#contact">Get in touch</a></li>
+							<li><a href="#who">What we do</a></li>
+							<li><a href="#contact">Contact</a></li>
 							<li><a href="#shop">Shop</a></li>
+							<li><a href="#">Solutions</a></li>
 							<li><a href="#clients">Our Clientele</a></li>
 							<li><a href="#">Blog</a></li>
 						</ul>
 					</nav>
+
 					<div class="home__message">
 						<p>
 							Your business and <span>home can be</span> effortlessly
@@ -44,13 +57,21 @@
 			<!-- home end -->
 			<!-- mission start -->
 			<section class="mission">
-				<!-- <div class="mission__container"> -->
 				<div class="mission__img">
 					<img src="./Assets/Who we are.jpg" alt="" />
 				</div>
-				<div class="mission__statement">
-					<div class="statement" id="who">
-						<h1>Who we are?</h1>
+				<div class="mission__statement" id="who">
+					<h1>Who we are?</h1>
+					<div class="mission__mobile">
+						<p>
+							Business, we think should evoke splendour and espouse that perfect
+							ambiance where every corner smells, shines and look like the main
+							area. This is what we call creating a wholesome environment.A
+							state of opulence where you combine artistic excellence and
+							technical mastery. It’s luxury at its highest level of perfection.
+						</p>
+					</div>
+					<div class="mission__desktop">
 						<p>
 							Our Mission is to Bring a State of Opulence to every Business in
 							<span>Africa.</span>
@@ -78,16 +99,14 @@
 							Signature Scent design, natural Essential Oils and advanced
 							Fragrance Diffusion Systems.
 						</p>
-						<p class="mission__link">
-							<span class="mission__modal" aria-label="read more"
-								>Read more &rarr;</span
-							>
-						</p>
 					</div>
+					<p class="mission__link mission__modal" aria-label="read--more">
+						Read more &rarr;
+					</p>
 				</div>
 				<!-- </div> -->
 			</section>
-
+			>
 			<!-- mission end -->
 
 			<!-- services start -->
@@ -142,8 +161,8 @@
 			<!-- partners end -->
 			<!-- Get in touch start -->
 			<section class="contact" id="contact">
+				<h2>Get in touch</h2>
 				<div class="contact__address">
-					<h2>Get in touch</h2>
 					<p>
 						6b Bendel Close, Off Bishop Aboyade Cole, Victoria Island, Lagos,
 						Nigeria
@@ -155,14 +174,15 @@
 						><span>&rarr;</span>
 					</p>
 				</div>
+
 				<div class="contact__form">
 					<form action="">
 						<label for="name">Full Name</label>
-						<span class="name"></span>
+						<span class="contact--span"></span>
 						<input type="text" name="name" id="name" placeholder="Full Name" />
 
 						<label for="email">Email Address</label>
-						<span class="name"></span>
+						<span class="contact--span"></span>
 						<input
 							type="email"
 							name="email"
@@ -171,7 +191,7 @@
 						/>
 
 						<label for="phone">Phone Number</label>
-						<span class="name"></span>
+						<span class="contact--span"></span>
 						<input
 							type="tel"
 							name="phone"
@@ -180,7 +200,7 @@
 						/>
 
 						<label for="message">Your Message</label>
-						<span class="name"></span>
+						<span class="contact--span"></span>
 						<input
 							type="text"
 							name="message"
@@ -197,9 +217,9 @@
 			<section class="clients" id="clients">
 				<h2 class="clients__header">Our Clients</h2>
 				<div class="clients__images">
-					<img src="./Assets/radisson.svg" alt="" />
-					<img src="./Assets/skyjet.svg" alt="" />
-					<img src="./Assets/itoro.svg" alt="" />
+					<img src="./Assets/radisson-2.svg" alt="" />
+					<img src="./Assets/skyjet-2.svg" alt="" />
+					<img src="./Assets/itoro-2.svg" alt="" />
 				</div>
 			</section>
 			<!-- clients end -->
@@ -218,7 +238,7 @@
 						<div class="shop__content">
 							<h3>Champagne</h3>
 							<p>Create a wonderful love expression</p>
-							<p>N25000.00</p>
+							<p class="shop__price">N25000.00</p>
 						</div>
 
 						<div class="shop__btn">
@@ -238,7 +258,7 @@
 						<div class="shop__content">
 							<h3>Perfume</h3>
 							<p>Create a wonderful love expression</p>
-							<p>N15000.00</p>
+							<p class="shop__price">N15000.00</p>
 						</div>
 
 						<div class="shop__btn">
@@ -258,7 +278,7 @@
 						<div class="shop__content">
 							<h3>Aromax</h3>
 							<p>Create a wonderful love expression</p>
-							<p>N35000.00</p>
+							<p class="shop__price">N35000.00</p>
 						</div>
 
 						<div class="shop__btn">
@@ -278,7 +298,7 @@
 						<div class="shop__content">
 							<h3>Aromax</h3>
 							<p>Create a wonderful love expression</p>
-							<p>N35000.00</p>
+							<p class="shop__price">N35000.00</p>
 						</div>
 
 						<div class="shop__btn">
@@ -299,7 +319,7 @@
 				<div class="footer">
 					<div class="social">
 						<div class="social__img">
-							<img src="./Assets/logo-3 2.svg" alt="" class="sm--icon" />
+							<img src="./Assets/company-logo.svg" alt="" class="sm--icon" />
 						</div>
 						<div class="social__statement">
 							<p>
@@ -326,9 +346,20 @@
 							</a>
 						</div>
 						<div class="social__links">
-							<p><a href="#">Company Services</a></p>
-							<p><a href="#">Shop Case Studies</a></p>
-							<p><a href="#">Knowledge base Contact</a></p>
+							<div>
+								<p><a href="#">Company</a></p>
+
+								<p><a href="#"> Services</a></p>
+
+								<p><a href="#">Shop</a></p>
+							</div>
+
+							<div>
+								<p><a href="#">Case Studies</a></p>
+								<p><a href="#">Knowledge base</a></p>
+
+								<p><a href="#"> Contact</a></p>
+							</div>
 						</div>
 					</div>
 					<div class="social__form">
@@ -336,12 +367,12 @@
 							<label for="email">
 								Enter your Email Address
 							</label>
-							<span></span>
+							<span class="social__span"></span>
 							<input
 								type="email"
 								name="email"
 								id="email"
-								placeholder="Email Address"
+								placeholder="Enter your Email Address &rarr;"
 							/>
 						</form>
 						<div class="footer__contact">
@@ -405,6 +436,25 @@
 			var modal = document.querySelector(".modal");
 			var readMore = document.querySelector(".mission__modal");
 
+			var closeIcon = document.querySelector(".close--container");
+
+			var menuList = document.querySelector(".intro__nav");
+
+			var menuButton = document.querySelector(".home__menu__button");
+
+			// menuList.addEventListener("click", function () {
+			// 	menuList.style.display = "none";
+			// });
+
+			menuButton.addEventListener("click", function () {
+				menuList.style.display = "block";
+			});
+
+			// closeIcon.addEventListener("click", function () {
+			// 	menuList.style.display = "none";
+			// });
+			alterContent({ ref: closeIcon, action: menuList, effect: "none", event });
+
 			readMore.addEventListener("click", function (event) {
 				modal.style.display = "block";
 			});
@@ -412,9 +462,15 @@
 			span.addEventListener("click", function toggle(event) {
 				modal.style.display = "none";
 			});
-			modal.addEventListener("click", function () {
-				modal.style.display = "none";
-			});
+			// modal.addEventListener("click", function () {
+			// 	modal.style.display = "none";
+			// });
+
+			function alterContent({ ref, action, effect, event = "click" }) {
+				ref.addEventListener(event, function () {
+					return (action.style.display = effect);
+				});
+			}
 		</script>
 	</body>
 </html>
