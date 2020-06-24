@@ -441,28 +441,35 @@ footer {
 }
 
 .footer {
+	width: 90%;
+	/* border: 2px solid blue; */
 	display: grid;
-	/* place-items: center; */
+	place-items: center;
 	margin: 2rem 0;
 	padding: 2rem 0;
 }
 
 .social {
+	width: 80%;
 	display: grid;
+	/* border: 2px solid red; */
 }
 
 .social__img img {
 	width: 80px;
 }
 .social__tags {
-	padding: 0.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+	/* border: 2px solid red; */
 }
-.social__tags > a {
+/* .social__tags > a {
 	display: inline-block;
 	padding-right: 3rem;
 	margin-right: 1rem;
-	/* background-color: red; */
-}
+	
+} */
 
 .social__statement {
 	padding: 0.6rem 0;
@@ -519,6 +526,8 @@ footer {
 }
 .social__form {
 	position: relative;
+	width: 81%;
+	/* border: 2px solid yellow; */
 }
 
 .footer__contact > p:nth-of-type(1)::before,
