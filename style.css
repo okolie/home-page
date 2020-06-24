@@ -270,6 +270,7 @@ header {
 	border-bottom: 1px solid #000;
 	font-size: 1rem;
 	padding-left: 2rem;
+	padding-bottom: 0.5rem;
 	transition: 0.3s;
 }
 .contact__form input:focus {
@@ -487,6 +488,7 @@ footer {
 .social__links {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 1rem;
 	margin-bottom: 2rem;
 }
