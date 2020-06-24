@@ -435,43 +435,38 @@ header {
 footer {
 	background-image: url(./Assets/footer-2.jpg);
 	/* width: 100vh; */
-	display: flex;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 	font-size: 0.7rem;
 }
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	width: 90%;
+	display: grid;
+	/* place-items: center; */
 	margin: 2rem 0;
 	padding: 2rem 0;
 }
 
 .social {
-	display: flex;
-	flex-flow: column wrap;
-
-	flex-basis: 35%;
+	display: grid;
 }
 
-.social__form {
-	flex-basis: 35%;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
+.social__img img {
+	width: 80px;
 }
-
 .social__tags {
 	padding: 0.5rem 0;
-	padding-bottom: 2rem;
 }
-.social__img img {
-	width: 50px;
+.social__tags > a {
+	display: inline-block;
+	padding-right: 3rem;
+	margin-right: 1rem;
+	/* background-color: red; */
 }
 
 .social__statement {
 	padding: 0.6rem 0;
+	/* border: 2px solid yellow; */
 }
 .social__statement p {
 	font-weight: 600;
@@ -481,21 +476,15 @@ footer {
 	width: 10px;
 	display: inline-block;
 }
-.social__tags a {
-	padding-right: 0.5rem;
-}
+
 .social__links {
 	display: flex;
 	justify-content: space-between;
-}
-.social__links > div {
-	padding: 0.5rem 0;
-}
-.social__links div p {
-	padding-bottom: 0.3rem;
+	padding-top: 1rem;
+	margin-bottom: 2rem;
 }
 
-.social__links div p a {
+.social__links p a {
 	text-decoration: none;
 	font-weight: 600;
 }
@@ -504,6 +493,7 @@ footer {
 	display: none;
 }
 .social__form form input {
+	display: none;
 	padding: 0.5rem 0;
 	padding-left: 1.6rem;
 	outline: none;
@@ -519,7 +509,7 @@ footer {
 	font-weight: 600;
 }
 
-.link a {
+.contact-telephone a {
 	text-decoration: none;
 }
 
@@ -530,7 +520,7 @@ footer {
 .social__form {
 	position: relative;
 }
-.social__span:before,
+
 .footer__contact > p:nth-of-type(1)::before,
 .footer__contact > p:nth-of-type(2)::before,
 .footer__contact > p:nth-of-type(3)::before,
@@ -568,6 +558,7 @@ footer {
 	height: 10px;
 }
 
+/* modal */
 .modal {
 	position: fixed;
 	top: 0;
@@ -593,6 +584,7 @@ footer {
 	position: relative;
 	font-size: 1rem;
 	color: #000;
+	/* text-align: center; */
 	background-color: rgb(255, 255, 255, 0.9);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transform: translate(13%, 3%);
