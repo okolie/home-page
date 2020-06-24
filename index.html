@@ -448,6 +448,8 @@
 
 			var menuButton = document.querySelector(".home__menu__button");
 
+			// var mobileMission = document.querySelector(".mission__mobile");
+
 			// menuList.addEventListener("click", function () {
 			// 	menuList.style.display = "none";
 			// });
@@ -456,13 +458,15 @@
 				menuList.style.display = "block";
 			});
 
-			// closeIcon.addEventListener("click", function () {
-			// 	menuList.style.display = "none";
-			// });
-			alterContent({ ref: closeIcon, action: menuList, effect: "none", event });
+			closeIcon.addEventListener("click", function () {
+				menuList.style.display = "none";
+				// mobileMission.style.display = "block";
+			});
+			// alterContent({ ref: closeIcon, action: menuList, effect: "none", event });
 
 			readMore.addEventListener("click", function (event) {
 				modal.style.display = "block";
+				// mobileMission.style.display = "none";
 			});
 
 			span.addEventListener("click", function toggle(event) {
