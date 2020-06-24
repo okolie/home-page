@@ -346,6 +346,7 @@ header {
 .clients__images > div {
 	flex: 1 1 33.3%;
 	text-align: center;
+	/* border: 2px solid red; */
 }
 .clients__images > div img {
 	max-width: 100%;
@@ -386,7 +387,7 @@ header {
 
 .shop__order {
 	flex: 1;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	margin: 1rem 0;
 	padding: 1rem;
 	box-shadow: 0px 4px 4px rgba(175, 172, 172, 0.46);
