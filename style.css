@@ -198,7 +198,7 @@ header {
 }
 
 .service__group {
-	width: 100%;
+	/* width: 100%; */
 	display: flex;
 	flex-flow: column wrap;
 	/* border: 2px solid red; */
@@ -632,17 +632,58 @@ footer {
 	font-size: 50px;
 	color: white;
 	animation-name: animateClose;
-	animation-duration: 0.8s;
+	animation-duration: 2s;
+	transform: rotate(360deg);
 }
 
 @keyframes animateClose {
-	from {
+	0% {
 		right: -200px;
+		transform: rotate(0deg);
 	}
-	to {
+	90% {
+		transform: rotate(270deg);
+	}
+	100% {
 		right: 75px;
+		transform: rotate(360deg);
 	}
 }
+
+@media screen and (min-width: 600px) {
+	.service__group {
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.service__one,
+	.service__two {
+		flex: 49%;
+	}
+	.service__one {
+		margin-bottom: 0;
+		margin-right: 2%;
+	}
+	.shop__orders {
+		/* display: flex; */
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* border: 2px solid red; */
+	}
+	.shop__order {
+		flex: 45%;
+		max-width: 46%;
+		/* border: 2px solid red; */
+	}
+	.shop__order:nth-of-type(1),
+	.shop__order:nth-of-type(3) {
+		margin-right: 2%;
+	}
+}
+
+@media screen and (min-width: 719) {
+}
+
 /* .social__statement {
 	width: 45%;
 	padding: 1rem 0;
