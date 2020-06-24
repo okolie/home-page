@@ -51,17 +51,17 @@ nav {
 	list-style: none;
 	background-color: #fff;
 	opacity: 0.95;
-	width: 90%;
+	width: 98%;
 	font-size: 1.3rem;
 	padding: 2rem;
 	position: absolute;
+	top: 10px;
 	animation-name: animateLeft;
 	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 }
 
 .intro__nav li {
-	/* border: 2px solid red; */
 	width: 35%;
 	margin: 0 auto;
 }
@@ -85,7 +85,6 @@ nav {
 	padding: 1rem 0;
 	padding-left: 0.5rem;
 	text-align: center;
-	/* border-bottom: 1px solid; */
 }
 header {
 	display: flex;
@@ -137,13 +136,13 @@ header {
 	margin: 0 auto;
 }
 .mission__img {
-	grid-column: 1/10;
+	grid-column: 1/13;
 	grid-row: 1/13;
 }
 
 .mission__statement {
-	grid-column: 6/13;
-	grid-row: 5/11;
+	grid-column: 3/12;
+	grid-row: 5/10;
 	background: #fffcfc;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -315,24 +314,24 @@ header {
 
 /* clients */
 .clients {
-	width: 100%;
-	margin: 0 auto;
 	background: #fafafa;
-
+	max-width: 100%;
+	margin: 0 auto;
 	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
+	flex-direction: column;
 }
 .clients__images {
-	width: 80%;
-	margin-bottom: 1rem;
-	padding: 1rem 0;
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
 }
-.clients__images img:first-child,
-.clients__images img:last-child {
-	width: 100px;
+
+.clients__images > div {
+	flex: 1 1 33.3%;
+	text-align: center;
+}
+.clients__images > div img {
+	max-width: 100%;
 }
 .clients__header {
 	text-align: center;
@@ -347,7 +346,6 @@ header {
 .shop {
 	width: 90%;
 	margin: 0 auto;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -372,7 +370,7 @@ header {
 }
 
 .shop__order {
-	flex-basis: 47%;
+	flex-basis: 100%;
 	margin: 1rem 0;
 	padding: 1rem;
 	box-shadow: 0px 4px 4px rgba(175, 172, 172, 0.46);
@@ -552,9 +550,6 @@ footer {
 	top: 13px;
 	height: 10px;
 }
-.modal {
-	/* display: none; */
-}
 
 .modal {
 	position: fixed;
@@ -585,7 +580,7 @@ footer {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transform: translate(13%, 3%);
 	animation-name: animatetop;
-	animation-duration: 0.4s;
+	animation-duration: 0.9s;
 }
 
 @keyframes animatetop {
@@ -598,6 +593,7 @@ footer {
 		opacity: 1;
 	}
 }
+
 .modal__content > p {
 	padding: 1rem 4rem;
 	line-height: 1.3rem;
@@ -615,6 +611,17 @@ footer {
 	z-index: 3;
 	font-size: 50px;
 	color: white;
+	animation-name: animateClose;
+	animation-duration: 0.8s;
+}
+
+@keyframes animateClose {
+	from {
+		right: -200px;
+	}
+	to {
+		right: 75px;
+	}
 }
 /* .social__statement {
 	width: 45%;
