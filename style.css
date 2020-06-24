@@ -588,10 +588,10 @@ footer {
 	width: 40px;
 }
 .modal__content {
-	padding: 1rem 0.2rem;
+	padding: 1rem 0.5rem;
 	width: 80%;
 	position: relative;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	color: #000;
 	background-color: rgb(255, 255, 255, 0.9);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -612,12 +612,12 @@ footer {
 }
 
 .modal__content > p {
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	line-height: 1.3rem;
 	text-align: justify;
 }
 .modal__content > h2 {
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	color: #2d7fc0;
 }
 
