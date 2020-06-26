@@ -914,9 +914,7 @@ footer {
 	.home__message {
 		width: 45%;
 	}
-	.learn {
-		/* border: 2px solid red; */
-	}
+
 	.learn__more {
 		flex-basis: 15%;
 	}
@@ -1058,11 +1056,9 @@ footer {
 	.modal .close {
 		right: 200px;
 		top: 30px;
-		background-color: red;
 	}
 	.intro__nav {
 		width: 30%;
-		/* top: 0; */
 		left: 1010px;
 	}
 	@keyframes animateLeft {
@@ -1072,5 +1068,55 @@ footer {
 		to {
 			left: 1010px;
 		}
+	}
+
+	.social__form {
+		align-items: flex-end;
+	}
+	.social__form form input {
+		width: 400px;
+		color: #fff;
+	}
+	.footer__contact p {
+		padding-left: 2rem;
+	}
+	.footer__contact > p:nth-of-type(1)::before,
+	.footer__contact > p:nth-of-type(2)::before,
+	.footer__contact > p:nth-of-type(3)::before,
+	.footer__contact > p:nth-of-type(4)::before {
+		content: "";
+		position: absolute;
+		left: 245px;
+		/* top: 10px; */
+		background-image: url(./Assets/map.svg);
+		background-size: contain;
+		height: 18px;
+		width: 15px;
+	}
+
+	.footer__contact > p:nth-of-type(2)::before {
+		background-image: url(./Assets/calendar.svg);
+		height: 16px;
+		/* top: -20px; */
+	}
+
+	.footer__contact > p:nth-of-type(3)::before {
+		background-image: url(./Assets/phone.svg);
+		height: 16px;
+	}
+
+	.footer__contact > p:nth-of-type(4)::before {
+		background-image: url(./Assets/email.svg);
+		background-size: contain;
+		width: 17px;
+		height: 12px;
+	}
+	.social__span:before {
+		background-image: url(./Assets/email.svg);
+		top: 13px;
+		height: 10px;
+	}
+	.footer__copyright {
+		align-self: center;
 	}
 }
