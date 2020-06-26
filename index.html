@@ -460,18 +460,25 @@
 
 			var menuButton = document.querySelector(".home__menu__button");
 
+			var menuIcon = document.querySelector(".home__menu__button");
+
+			var menuLogo = document.querySelector(".home__logo__container");
 			// var mobileMission = document.querySelector(".mission__mobile");
 
 			// menuList.addEventListener("click", function () {
 			// 	menuList.style.display = "none";
 			// });
-
+			menuLogo.addEventListener("click", function (event) {
+				document.body.style.backgroundColor = "black";
+			});
 			menuButton.addEventListener("click", function () {
 				menuList.style.display = "block";
 			});
 
 			closeIcon.addEventListener("click", function () {
 				menuList.style.display = "none";
+				menuIcon.style.transform = "rotate(0deg)";
+
 				// mobileMission.style.display = "block";
 			});
 			// alterContent({ ref: closeIcon, action: menuList, effect: "none", event });
@@ -483,6 +490,11 @@
 
 			span.addEventListener("click", function toggle(event) {
 				modal.style.display = "none";
+			});
+
+			menuIcon.addEventListener("click", function (event) {
+				menuIcon.style.transform = "rotate(90deg)";
+				menuIcon.style.transition = "0.3s ease-in-out";
 			});
 			// modal.addEventListener("click", function () {
 			// 	modal.style.display = "none";
