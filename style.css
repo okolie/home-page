@@ -910,7 +910,18 @@ footer {
 		width: 70%;
 	}
 }
-@media screen and (min-width: 1081px) {
+
+@media screen and (min-width: 1080px) {
+	.learn__phrase {
+		width: 65%;
+		padding-left: 5%;
+	}
+	.learn__more {
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
 	.home__message {
 		width: 45%;
 	}
@@ -1046,6 +1057,9 @@ footer {
 	.shop p {
 		width: 20%;
 	}
+	.shop h2 {
+		font-size: 2rem;
+	}
 	.shop__order {
 		flex-basis: 24%;
 	}
@@ -1086,8 +1100,7 @@ footer {
 	.footer__contact > p:nth-of-type(4)::before {
 		content: "";
 		position: absolute;
-		left: 245px;
-		/* top: 10px; */
+		left: 252px;
 		background-image: url(./Assets/map.svg);
 		background-size: contain;
 		height: 18px;
@@ -1120,3 +1133,28 @@ footer {
 		align-self: center;
 	}
 }
+
+/* @media screen and (min-width: 1114px) {
+	.footer__contact > p:nth-of-type(1)::before,
+	.footer__contact > p:nth-of-type(2)::before,
+	.footer__contact > p:nth-of-type(3)::before,
+	.footer__contact > p:nth-of-type(4)::before {
+		left: 57px;
+	}
+}
+@media screen and (min-width: 1126px) {
+	.footer__contact > p:nth-of-type(1)::before,
+	.footer__contact > p:nth-of-type(2)::before,
+	.footer__contact > p:nth-of-type(3)::before,
+	.footer__contact > p:nth-of-type(4)::before {
+		left: 57px;
+	}
+}
+@media screen and (min-width: 1126px) {
+	.footer__contact > p:nth-of-type(1)::before,
+	.footer__contact > p:nth-of-type(2)::before,
+	.footer__contact > p:nth-of-type(3)::before,
+	.footer__contact > p:nth-of-type(4)::before {
+		left: 57px;
+	}
+} */
