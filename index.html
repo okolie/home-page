@@ -462,8 +462,18 @@
 
 			var menuIcon = document.querySelector(".home__menu__button");
 
-			// var body = document.querySelector("body");
-			// var menuLogo = document.querySelector(".home__logo__container");
+			var menuLogo = document.querySelector(".home__logo__container");
+
+			var socialImg = document.querySelector(".social__img");
+
+			menuLogo.addEventListener("click", function (event) {
+				document.body.style.backgroundColor = "black";
+			});
+
+			socialImg.addEventListener("click", function (event) {
+				document.body.style.backgroundColor = "white";
+			});
+
 			// var mobileMission = document.querySelector(".mission__mobile");
 
 			// menuList.addEventListener("click", function () {
@@ -497,9 +507,6 @@
 				menuIcon.style.transform = "rotate(90deg)";
 				menuIcon.style.transition = "0.3s ease-in-out";
 			});
-			// modal.addEventListener("click", function () {
-			// 	modal.style.display = "none";
-			// });
 
 			function alterContent({ ref, action, effect, event = "click" }) {
 				ref.addEventListener(event, function () {
