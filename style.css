@@ -337,17 +337,10 @@ header {
 	padding-bottom: 1rem;
 	flex-direction: column;
 }
-.clients__images {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	padding: 1.5rem;
-}
 
 .clients__images > div {
-	flex: 1 1 33.3%;
 	text-align: center;
-	/* border: 2px solid red; */
+	margin: 2rem 0;
 }
 .clients__images > div img {
 	max-width: 100%;
@@ -771,6 +764,15 @@ footer {
 	.mission__statement {
 		grid-row: 4/10;
 	}
+	.clients__images {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		padding: 1.5rem;
+	}
+	.clients__images > div {
+		flex: 1 1 33.3%;
+	}
 	.home__message p {
 		width: 80%;
 	}
@@ -1102,19 +1104,7 @@ footer {
 		right: 200px;
 		top: 30px;
 	}
-	/* .intro__nav {
-		width: 30%;
-		left: 1010px;
-	}
-	@keyframes animateLeft {
-		from {
-			left: 1500px;
-		}
-		to {
-			left: 1010px;
-		}
-	} */
-
+	
 	.social__form {
 		align-items: flex-end;
 	}
